@@ -1,0 +1,22 @@
+|Lab1
+Y_0 <= save_y0.DB_MAX_OUTPUT_PORT_TYPE
+CLK => save_y0.CLK
+CLK => sav2_y1.CLK
+CLK => save_y3.CLK
+X_1 => form_y0.IN0
+X_5 => form_y0.IN1
+X_5 => form_y2.IN3
+X_7 => form_y0.IN2
+X_7 => form_y1.IN2
+X_7 => form_y2.IN2
+X_3 => form_y0.IN3
+X_3 => form_y1.IN3
+Y_1 <= sav2_y1.DB_MAX_OUTPUT_PORT_TYPE
+X_2 => form_y1.IN0
+X_6 => form_y1.IN1
+X_6 => form_y2.IN1
+Y_2 <= save_y3.DB_MAX_OUTPUT_PORT_TYPE
+X_4 => form_y2.IN0
+X_0 => ~NO_FANOUT~
+
+
