@@ -260,8 +260,8 @@ c5cfeeabc5f2ab60b3453f6abbc42b41
 # hierarchies {
 Block1:inst|lmp_counter_my:inst1
 Block1:inst|lmp_counter_my:inst
-Block2:inst2|lmp_counter_my:inst2
-Block2:inst2|lmp_counter_my:inst
+Block2:inst4|lmp_counter_my:inst2
+Block2:inst4|lmp_counter_my:inst
 }
 # macro_sequence
 
@@ -373,8 +373,8 @@ clock
 # hierarchies {
 Block1:inst|lmp_counter_my:inst1|lpm_counter:lpm_counter_component
 Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component
-Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component
-Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component
+Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component
+Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component
 }
 # macro_sequence
 
@@ -412,8 +412,8 @@ clock
 # hierarchies {
 Block1:inst|lmp_counter_my:inst1|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated
 Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated
-Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated
-Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated
+Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated
+Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated
 }
 # macro_sequence
 
@@ -4544,8 +4544,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Block2:inst2|16dmux:inst3
-Block2:inst2|16dmux:inst4
+Block2:inst4|16dmux:inst3
+Block2:inst4|16dmux:inst4
 }
 # macro_sequence
 
@@ -4578,14 +4578,14 @@ db|Lab2.(11).cnf
 # case_insensitive
 # source_file
 block2.bdf
-cb7db72d724acdcbdb2bfbd88de1914
+b77d337e0a7979244a3d3ab79376433
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Block2:inst2
+Block2:inst4
 }
 # macro_sequence
 
@@ -4598,7 +4598,7 @@ db|Lab2.(12).cnf
 # case_insensitive
 # source_file
 main.bdf
-ba2a71f33340425256b292986b2dc8bf
+18fdfa8a32cf8dd6b76a767bf9917fb
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

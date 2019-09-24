@@ -1,5 +1,5 @@
 Simulator report for Lab2
-Tue Sep 24 10:33:16 2019
+Tue Sep 24 12:03:58 2019
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 3.0 us       ;
-; Simulation Netlist Size     ; 155 nodes    ;
-; Simulation Coverage         ;      60.00 % ;
-; Total Number of Transitions ; 5589         ;
+; Simulation Netlist Size     ; 153 nodes    ;
+; Simulation Coverage         ;      60.71 % ;
+; Total Number of Transitions ; 5503         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -94,13 +94,13 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      60.00 % ;
-; Total nodes checked                                 ; 155          ;
-; Total output ports checked                          ; 170          ;
+; Total coverage as a percentage                      ;      60.71 % ;
+; Total nodes checked                                 ; 153          ;
+; Total output ports checked                          ; 168          ;
 ; Total output ports with complete 1/0-value coverage ; 102          ;
 ; Total output ports with no 1/0-value coverage       ; 63           ;
 ; Total output ports with no 1-value coverage         ; 65           ;
-; Total output ports with no 0-value coverage         ; 66           ;
+; Total output ports with no 0-value coverage         ; 64           ;
 +-----------------------------------------------------+--------------+
 
 
@@ -115,6 +115,7 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|CLOCK_DIVIDED                                                                                                            ; |main|CLOCK_DIVIDED                                                                                                               ; pin_out          ;
 ; |main|OUTPUT_ARRAY[7]                                                                                                          ; |main|OUTPUT_ARRAY[7]                                                                                                             ; pin_out          ;
 ; |main|OUTPUT_ARRAY[5]                                                                                                          ; |main|OUTPUT_ARRAY[5]                                                                                                             ; pin_out          ;
+; |main|OUTPUT_ARRAY[4]                                                                                                          ; |main|OUTPUT_ARRAY[4]                                                                                                             ; pin_out          ;
 ; |main|OUTPUT_ARRAY[3]                                                                                                          ; |main|OUTPUT_ARRAY[3]                                                                                                             ; pin_out          ;
 ; |main|OUTPUT_ARRAY[2]                                                                                                          ; |main|OUTPUT_ARRAY[2]                                                                                                             ; pin_out          ;
 ; |main|OUTPUT_ARRAY[1]                                                                                                          ; |main|OUTPUT_ARRAY[1]                                                                                                             ; pin_out          ;
@@ -138,6 +139,7 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[1]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[1]           ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[2]         ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[2]            ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[1]         ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[1]            ; out0             ;
+; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]           ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[2]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[2]           ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[1]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[1]           ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]           ; out0             ;
@@ -148,34 +150,32 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[3]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[3]           ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[2]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[2]           ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[1]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[1]           ; out0             ;
-; |main|Block2:inst2|inst9                                                                                                       ; |main|Block2:inst2|inst9                                                                                                          ; out0             ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0            ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0               ; sumout           ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0            ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0~COUT          ; cout             ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1            ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1               ; sumout           ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1            ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1~COUT          ; cout             ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2            ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2               ; sumout           ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2            ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2~COUT          ; cout             ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita3            ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita3               ; sumout           ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[2]          ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[2]                        ; regout           ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[1]          ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[1]                        ; regout           ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[0]          ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[0]                        ; regout           ;
-; |main|Block2:inst2|16dmux:inst4|29                                                                                             ; |main|Block2:inst2|16dmux:inst4|29                                                                                                ; out0             ;
-; |main|Block2:inst2|16dmux:inst4|30                                                                                             ; |main|Block2:inst2|16dmux:inst4|30                                                                                                ; out0             ;
-; |main|Block2:inst2|16dmux:inst4|31                                                                                             ; |main|Block2:inst2|16dmux:inst4|31                                                                                                ; out0             ;
-; |main|Block2:inst2|16dmux:inst4|32                                                                                             ; |main|Block2:inst2|16dmux:inst4|32                                                                                                ; out0             ;
-; |main|Block2:inst2|16dmux:inst4|33                                                                                             ; |main|Block2:inst2|16dmux:inst4|33                                                                                                ; out0             ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0           ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0              ; sumout           ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0           ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0~COUT         ; cout             ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1           ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1              ; sumout           ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1           ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1~COUT         ; cout             ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2           ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2              ; sumout           ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2           ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2~COUT         ; cout             ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita3           ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita3              ; sumout           ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[2]         ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[2]                       ; regout           ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[1]         ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[1]                       ; regout           ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[0]         ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[0]                       ; regout           ;
-; |main|Block2:inst2|16dmux:inst3|26                                                                                             ; |main|Block2:inst2|16dmux:inst3|26                                                                                                ; out0             ;
-; |main|Block2:inst2|16dmux:inst3|29                                                                                             ; |main|Block2:inst2|16dmux:inst3|29                                                                                                ; out0             ;
+; |main|Block2:inst4|inst10                                                                                                      ; |main|Block2:inst4|inst10                                                                                                         ; out0             ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0            ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0               ; sumout           ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0            ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0~COUT          ; cout             ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1            ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1               ; sumout           ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1            ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1~COUT          ; cout             ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2            ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2               ; sumout           ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2            ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2~COUT          ; cout             ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita3            ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita3               ; sumout           ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[2]          ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[2]                        ; regout           ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[1]          ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[1]                        ; regout           ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[0]          ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[0]                        ; regout           ;
+; |main|Block2:inst4|16dmux:inst4|31                                                                                             ; |main|Block2:inst4|16dmux:inst4|31                                                                                                ; out0             ;
+; |main|Block2:inst4|16dmux:inst4|32                                                                                             ; |main|Block2:inst4|16dmux:inst4|32                                                                                                ; out0             ;
+; |main|Block2:inst4|16dmux:inst4|33                                                                                             ; |main|Block2:inst4|16dmux:inst4|33                                                                                                ; out0             ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0           ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0              ; sumout           ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0           ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0~COUT         ; cout             ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1           ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1              ; sumout           ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1           ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1~COUT         ; cout             ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2           ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2              ; sumout           ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2           ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2~COUT         ; cout             ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita3           ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita3              ; sumout           ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[2]         ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[2]                       ; regout           ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[1]         ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[1]                       ; regout           ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[0]         ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[0]                       ; regout           ;
+; |main|Block2:inst4|16dmux:inst3|28                                                                                             ; |main|Block2:inst4|16dmux:inst3|28                                                                                                ; out0             ;
+; |main|Block2:inst4|16dmux:inst3|31                                                                                             ; |main|Block2:inst4|16dmux:inst3|31                                                                                                ; out0             ;
 ; |main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0             ; |main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0                ; sumout           ;
 ; |main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0             ; |main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0~COUT           ; cout             ;
 ; |main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1             ; |main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1                ; sumout           ;
@@ -266,8 +266,8 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]  ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[2]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[2]  ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[1]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[1]  ; out0             ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]          ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]               ; regout           ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]         ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]              ; regout           ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]          ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]               ; regout           ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]         ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]              ; regout           ;
 ; |main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]           ; |main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]                ; regout           ;
 ; |main|Block1:inst|lpm_compare0:inst2|lpm_compare:lpm_compare_component|cmpr_big:auto_generated|data_wire[1]~1                  ; |main|Block1:inst|lpm_compare0:inst2|lpm_compare:lpm_compare_component|cmpr_big:auto_generated|data_wire[1]~1            ; out0             ;
 ; |main|Block1:inst|lmp_counter_my:inst1|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]          ; |main|Block1:inst|lmp_counter_my:inst1|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]               ; regout           ;
@@ -312,7 +312,6 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |main|OUTPUT_ARRAY[9]                                                                                                          ; |main|OUTPUT_ARRAY[9]                                                                                                    ; pin_out          ;
 ; |main|OUTPUT_ARRAY[8]                                                                                                          ; |main|OUTPUT_ARRAY[8]                                                                                                    ; pin_out          ;
 ; |main|OUTPUT_ARRAY[6]                                                                                                          ; |main|OUTPUT_ARRAY[6]                                                                                                    ; pin_out          ;
-; |main|OUTPUT_ARRAY[4]                                                                                                          ; |main|OUTPUT_ARRAY[4]                                                                                                    ; pin_out          ;
 ; |main|Blcok3:inst3|lpm_counter_for_block_3:inst|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|counter_reg_bit1a[3] ; |main|Blcok3:inst3|lpm_counter_for_block_3:inst|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|safe_q[3]      ; regout           ;
 ; |main|Blcok3:inst3|lpm_counter_for_block_3:inst|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|counter_reg_bit1a[2] ; |main|Blcok3:inst3|lpm_counter_for_block_3:inst|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|safe_q[2]      ; regout           ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[3]       ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[3] ; out0             ;
@@ -336,13 +335,12 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[3]       ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[3] ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[2]       ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[2] ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[1]       ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[1] ; out0             ;
-; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]  ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]  ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]  ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[2]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[2]  ; out0             ;
 ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[1]        ; |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[1]  ; out0             ;
-; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]          ; |main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]               ; regout           ;
-; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]         ; |main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]              ; regout           ;
+; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]          ; |main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]               ; regout           ;
+; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]         ; |main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]              ; regout           ;
 ; |main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]           ; |main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]                ; regout           ;
 ; |main|Block1:inst|lpm_compare0:inst2|lpm_compare:lpm_compare_component|cmpr_big:auto_generated|data_wire[1]~1                  ; |main|Block1:inst|lpm_compare0:inst2|lpm_compare:lpm_compare_component|cmpr_big:auto_generated|data_wire[1]~1            ; out0             ;
 ; |main|Block1:inst|lmp_counter_my:inst1|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3]          ; |main|Block1:inst|lmp_counter_my:inst1|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]               ; regout           ;
@@ -377,7 +375,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Tue Sep 24 10:33:15 2019
+    Info: Processing started: Tue Sep 24 12:03:57 2019
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Lab2 -c Lab2
 Info: Using vector source file "D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2/main.vwf"
 Info: Overwriting simulation input file with simulation results
@@ -385,12 +383,12 @@ Info: Overwriting simulation input file with simulation results
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      60.00 %
-Info: Number of transitions in simulation is 5589
+Info: Simulation coverage is      60.71 %
+Info: Number of transitions in simulation is 5503
 Info: Vector file main.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 157 megabytes
-    Info: Processing ended: Tue Sep 24 10:33:16 2019
+    Info: Processing ended: Tue Sep 24 12:03:58 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

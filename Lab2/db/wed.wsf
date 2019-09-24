@@ -311,185 +311,6 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 	}
 }
 
-VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2/Block2.vwf")
-{
-	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 745501;
-		NUMERATOR = 580;
-		DENOMINATOR = 745501;
-		TOP_INDEX = 0;
-	}
-	CLOCK{
-		PERIOD = 10000;
-		OFFSET = 0;
-		DUTY_CYCLE = 50;
-	}
-	RANDOM_VALUE{
-		INTERVAL_TYPE = HALF_GRID;
-	}
-	LINE{
-		SIGNAL = "CLK_CHANGED";
-		INDEX = 0;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "CLK_DIVIDED";
-		INDEX = 1;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "CLK_ORIGINAL";
-		INDEX = 2;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DIVISOR";
-		INDEX = 3;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DIVISOR[3]";
-		INDEX = 4;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DIVISOR[2]";
-		INDEX = 5;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DIVISOR[1]";
-		INDEX = 6;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DIVISOR[0]";
-		INDEX = 7;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_and2";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_counterdown";
-		INDEX = 9;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_counterdown[3]";
-		INDEX = 10;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_counterdown[2]";
-		INDEX = 11;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_counterdown[1]";
-		INDEX = 12;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_counterdown[0]";
-		INDEX = 13;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_counterup";
-		INDEX = 14;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_counterup[3]";
-		INDEX = 15;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_counterup[2]";
-		INDEX = 16;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_counterup[1]";
-		INDEX = 17;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "from_counterup[0]";
-		INDEX = 18;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "qn";
-		INDEX = 19;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-}
-
 VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2/Block1.vwf")
 {
 	ZOOM{
@@ -605,6 +426,121 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 	}
 }
 
+VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2/Block2.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 745501;
+		NUMERATOR = 580;
+		DENOMINATOR = 745501;
+		TOP_INDEX = 0;
+	}
+	CLOCK{
+		PERIOD = 10000;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
+	}
+	RANDOM_VALUE{
+		INTERVAL_TYPE = HALF_GRID;
+	}
+	LINE{
+		SIGNAL = "clk_in";
+		INDEX = 0;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "clk_D";
+		INDEX = 1;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "count_down";
+		INDEX = 2;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "count_down[3]";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "count_down[2]";
+		INDEX = 4;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "count_down[1]";
+		INDEX = 5;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "count_down[0]";
+		INDEX = 6;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "count_up";
+		INDEX = 7;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "count_up[3]";
+		INDEX = 8;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "count_up[2]";
+		INDEX = 9;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "count_up[1]";
+		INDEX = 10;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "count_up[0]";
+		INDEX = 11;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+}
+
 VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2/main.vwf")
 {
 	ZOOM{
@@ -639,7 +575,7 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "CLK_ORIGINAL";
+		SIGNAL = "CLOCK_DIVIDED";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -647,7 +583,7 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "M";
+		SIGNAL = "Down_lvl";
 		INDEX = 3;
 		FORMAT = T;
 		SCALE = 1;
@@ -655,7 +591,7 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "M[3]";
+		SIGNAL = "Down_lvl[3]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -663,7 +599,7 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "M[2]";
+		SIGNAL = "Down_lvl[2]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -671,7 +607,7 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "M[1]";
+		SIGNAL = "Down_lvl[1]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -679,7 +615,7 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "M[0]";
+		SIGNAL = "Down_lvl[0]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -687,7 +623,7 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "N";
+		SIGNAL = "OUTPUT_ARRAY";
 		INDEX = 8;
 		FORMAT = T;
 		SCALE = 1;
@@ -695,7 +631,7 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "N[3]";
+		SIGNAL = "OUTPUT_ARRAY[15]";
 		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
@@ -703,7 +639,7 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "N[2]";
+		SIGNAL = "OUTPUT_ARRAY[14]";
 		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
@@ -711,7 +647,7 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "N[1]";
+		SIGNAL = "OUTPUT_ARRAY[13]";
 		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
@@ -719,8 +655,144 @@ VECTOR("D:/Study/MyLabs/structural_and_functional_organization_of_computers/Lab2
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "N[0]";
+		SIGNAL = "OUTPUT_ARRAY[12]";
 		INDEX = 12;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[11]";
+		INDEX = 13;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[10]";
+		INDEX = 14;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[9]";
+		INDEX = 15;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[8]";
+		INDEX = 16;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[7]";
+		INDEX = 17;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[6]";
+		INDEX = 18;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[5]";
+		INDEX = 19;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[4]";
+		INDEX = 20;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[3]";
+		INDEX = 21;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[2]";
+		INDEX = 22;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[1]";
+		INDEX = 23;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_ARRAY[0]";
+		INDEX = 24;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Up_lvl";
+		INDEX = 25;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Up_lvl[3]";
+		INDEX = 26;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Up_lvl[2]";
+		INDEX = 27;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Up_lvl[1]";
+		INDEX = 28;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Up_lvl[0]";
+		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

@@ -8,8 +8,8 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|Block1:inst|lmp_counter_my:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_e4i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|Block1:inst|lpm_add_sub0:inst8|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_vph.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|Block1:inst|lpm_compare0:inst3|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_big.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_e4i.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_e4i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_e4i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_e4i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|Block1:inst|lmp_counter_my:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_e4i.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -9,7 +9,7 @@ Up_lvl[0] => Block1:inst.N_ARRAY[0]
 Up_lvl[1] => Block1:inst.N_ARRAY[1]
 Up_lvl[2] => Block1:inst.N_ARRAY[2]
 Up_lvl[3] => Block1:inst.N_ARRAY[3]
-CLOCK_DIVIDED <= Block2:inst2.clk_D
+CLOCK_DIVIDED <= Block2:inst4.clk_D
 OUTPUT_ARRAY[0] <= Blcok3:inst3.OUTPUT[0]
 OUTPUT_ARRAY[1] <= Blcok3:inst3.OUTPUT[1]
 OUTPUT_ARRAY[2] <= Blcok3:inst3.OUTPUT[2]
@@ -47,8 +47,8 @@ N_ARRAY[3] => lpm_add_sub0:inst8.dataa[3]
 QN <= 9.DB_MAX_OUTPUT_PORT_TYPE
 S => 7.IN0
 R => 8.IN0
-K => 6~1.IN0
-J => 6~0.IN1
+K => 6.IN0
+J => 6.IN1
 CK => 6.CLK
 Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -87,14 +87,14 @@ ageb <= <GND>
 
 |main|Block1:inst|lpm_compare0:inst3|lpm_compare:lpm_compare_component|cmpr_big:auto_generated
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => data_wire[0]~2.IN0
-dataa[1] => data_wire[0]~3.IN0
-dataa[2] => data_wire[1]~0.IN0
-dataa[3] => data_wire[1]~1.IN0
-datab[0] => data_wire[0]~2.IN1
-datab[1] => data_wire[0]~3.IN1
-datab[2] => data_wire[1]~0.IN1
-datab[3] => data_wire[1]~1.IN1
+dataa[0] => data_wire[0].IN0
+dataa[1] => data_wire[0].IN0
+dataa[2] => data_wire[1].IN0
+dataa[3] => data_wire[1].IN0
+datab[0] => data_wire[0].IN1
+datab[1] => data_wire[0].IN1
+datab[2] => data_wire[1].IN1
+datab[3] => data_wire[1].IN1
 
 
 |main|Block1:inst|lmp_counter_my:inst1
@@ -156,7 +156,7 @@ q[0] <= counter_reg_bit1a[0].REGOUT
 q[1] <= counter_reg_bit1a[1].REGOUT
 q[2] <= counter_reg_bit1a[2].REGOUT
 q[3] <= counter_reg_bit1a[3].REGOUT
-sclr => _~9.IN1
+sclr => _.IN1
 sclr => counter_reg_bit1a[3].SCLR
 sclr => counter_reg_bit1a[2].SCLR
 sclr => counter_reg_bit1a[1].SCLR
@@ -245,14 +245,14 @@ ageb <= <GND>
 
 |main|Block1:inst|lpm_compare0:inst2|lpm_compare:lpm_compare_component|cmpr_big:auto_generated
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => data_wire[0]~2.IN0
-dataa[1] => data_wire[0]~3.IN0
-dataa[2] => data_wire[1]~0.IN0
-dataa[3] => data_wire[1]~1.IN0
-datab[0] => data_wire[0]~2.IN1
-datab[1] => data_wire[0]~3.IN1
-datab[2] => data_wire[1]~0.IN1
-datab[3] => data_wire[1]~1.IN1
+dataa[0] => data_wire[0].IN0
+dataa[1] => data_wire[0].IN0
+dataa[2] => data_wire[1].IN0
+dataa[3] => data_wire[1].IN0
+datab[0] => data_wire[0].IN1
+datab[1] => data_wire[0].IN1
+datab[2] => data_wire[1].IN1
+datab[3] => data_wire[1].IN1
 
 
 |main|Block1:inst|lpm_add_sub0:inst8
@@ -362,20 +362,28 @@ q[0] <= counter_reg_bit1a[0].REGOUT
 q[1] <= counter_reg_bit1a[1].REGOUT
 q[2] <= counter_reg_bit1a[2].REGOUT
 q[3] <= counter_reg_bit1a[3].REGOUT
-sclr => _~9.IN1
+sclr => _.IN1
 sclr => counter_reg_bit1a[3].SCLR
 sclr => counter_reg_bit1a[2].SCLR
 sclr => counter_reg_bit1a[1].SCLR
 sclr => counter_reg_bit1a[0].SCLR
 
 
-|main|Block2:inst2
+|main|Block2:inst4
 clk_D <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 clk_in => lmp_counter_my:inst2.clock
 clk_in => inst1.IN0
+count_down[0] <= counter_down[0].DB_MAX_OUTPUT_PORT_TYPE
+count_down[1] <= counter_down[1].DB_MAX_OUTPUT_PORT_TYPE
+count_down[2] <= counter_down[2].DB_MAX_OUTPUT_PORT_TYPE
+count_down[3] <= counter_down[3].DB_MAX_OUTPUT_PORT_TYPE
+count_up[0] <= counter_up[0].DB_MAX_OUTPUT_PORT_TYPE
+count_up[1] <= counter_up[1].DB_MAX_OUTPUT_PORT_TYPE
+count_up[2] <= counter_up[2].DB_MAX_OUTPUT_PORT_TYPE
+count_up[3] <= counter_up[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|Block2:inst2|16dmux:inst3
+|main|Block2:inst4|16dmux:inst3
 Q8 <= 24.DB_MAX_OUTPUT_PORT_TYPE
 A => 5.IN0
 A => 22.IN0
@@ -430,7 +438,7 @@ Q1 <= 32.DB_MAX_OUTPUT_PORT_TYPE
 Q0 <= 33.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|Block2:inst2|lmp_counter_my:inst2
+|main|Block2:inst4|lmp_counter_my:inst2
 clock => lpm_counter:lpm_counter_component.clock
 sclr => lpm_counter:lpm_counter_component.sclr
 q[0] <= lpm_counter:lpm_counter_component.q[0]
@@ -439,7 +447,7 @@ q[2] <= lpm_counter:lpm_counter_component.q[2]
 q[3] <= lpm_counter:lpm_counter_component.q[3]
 
 
-|main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component
+|main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component
 clock => cntr_e4i:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -480,7 +488,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|main|Block2:inst2|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated
+|main|Block2:inst4|lmp_counter_my:inst2|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated
 clock => counter_reg_bit1a[3].CLK
 clock => counter_reg_bit1a[2].CLK
 clock => counter_reg_bit1a[1].CLK
@@ -489,14 +497,14 @@ q[0] <= counter_reg_bit1a[0].REGOUT
 q[1] <= counter_reg_bit1a[1].REGOUT
 q[2] <= counter_reg_bit1a[2].REGOUT
 q[3] <= counter_reg_bit1a[3].REGOUT
-sclr => _~9.IN1
+sclr => _.IN1
 sclr => counter_reg_bit1a[3].SCLR
 sclr => counter_reg_bit1a[2].SCLR
 sclr => counter_reg_bit1a[1].SCLR
 sclr => counter_reg_bit1a[0].SCLR
 
 
-|main|Block2:inst2|16dmux:inst4
+|main|Block2:inst4|16dmux:inst4
 Q8 <= 24.DB_MAX_OUTPUT_PORT_TYPE
 A => 5.IN0
 A => 22.IN0
@@ -551,7 +559,7 @@ Q1 <= 32.DB_MAX_OUTPUT_PORT_TYPE
 Q0 <= 33.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|Block2:inst2|lmp_counter_my:inst
+|main|Block2:inst4|lmp_counter_my:inst
 clock => lpm_counter:lpm_counter_component.clock
 sclr => lpm_counter:lpm_counter_component.sclr
 q[0] <= lpm_counter:lpm_counter_component.q[0]
@@ -560,7 +568,7 @@ q[2] <= lpm_counter:lpm_counter_component.q[2]
 q[3] <= lpm_counter:lpm_counter_component.q[3]
 
 
-|main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component
+|main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component
 clock => cntr_e4i:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -601,7 +609,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|main|Block2:inst2|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated
+|main|Block2:inst4|lmp_counter_my:inst|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated
 clock => counter_reg_bit1a[3].CLK
 clock => counter_reg_bit1a[2].CLK
 clock => counter_reg_bit1a[1].CLK
@@ -610,7 +618,7 @@ q[0] <= counter_reg_bit1a[0].REGOUT
 q[1] <= counter_reg_bit1a[1].REGOUT
 q[2] <= counter_reg_bit1a[2].REGOUT
 q[3] <= counter_reg_bit1a[3].REGOUT
-sclr => _~9.IN1
+sclr => _.IN1
 sclr => counter_reg_bit1a[3].SCLR
 sclr => counter_reg_bit1a[2].SCLR
 sclr => counter_reg_bit1a[1].SCLR
@@ -689,53 +697,53 @@ eq[15] <= decode_e9f:auto_generated.eq[15]
 
 |main|Blcok3:inst3|lpm_decode_for_block_3:inst1|lpm_decode:lpm_decode_component|decode_e9f:auto_generated
 data[0] => w_anode102w[1].IN1
-data[0] => w_anode112w[1]~1.IN0
+data[0] => w_anode112w[1].IN0
 data[0] => w_anode122w[1].IN1
-data[0] => w_anode132w[1]~1.IN0
+data[0] => w_anode132w[1].IN0
 data[0] => w_anode142w[1].IN1
-data[0] => w_anode152w[1]~0.IN0
+data[0] => w_anode152w[1].IN0
 data[0] => w_anode162w[1].IN1
 data[0] => w_anode21w[1].IN1
-data[0] => w_anode31w[1]~1.IN0
+data[0] => w_anode31w[1].IN0
 data[0] => w_anode41w[1].IN1
-data[0] => w_anode4w[1]~2.IN0
-data[0] => w_anode51w[1]~1.IN0
+data[0] => w_anode4w[1].IN0
+data[0] => w_anode51w[1].IN0
 data[0] => w_anode61w[1].IN1
-data[0] => w_anode71w[1]~0.IN0
+data[0] => w_anode71w[1].IN0
 data[0] => w_anode81w[1].IN1
-data[0] => w_anode91w[1]~2.IN0
-data[1] => w_anode102w[2]~1.IN0
+data[0] => w_anode91w[1].IN0
+data[1] => w_anode102w[2].IN0
 data[1] => w_anode112w[2].IN1
 data[1] => w_anode122w[2].IN1
-data[1] => w_anode132w[2]~0.IN0
-data[1] => w_anode142w[2]~0.IN0
+data[1] => w_anode132w[2].IN0
+data[1] => w_anode142w[2].IN0
 data[1] => w_anode152w[2].IN1
 data[1] => w_anode162w[2].IN1
-data[1] => w_anode21w[2]~1.IN0
+data[1] => w_anode21w[2].IN0
 data[1] => w_anode31w[2].IN1
 data[1] => w_anode41w[2].IN1
-data[1] => w_anode4w[2]~1.IN0
-data[1] => w_anode51w[2]~0.IN0
-data[1] => w_anode61w[2]~0.IN0
+data[1] => w_anode4w[2].IN0
+data[1] => w_anode51w[2].IN0
+data[1] => w_anode61w[2].IN0
 data[1] => w_anode71w[2].IN1
 data[1] => w_anode81w[2].IN1
-data[1] => w_anode91w[2]~1.IN0
-data[2] => w_anode102w[3]~0.IN0
-data[2] => w_anode112w[3]~0.IN0
-data[2] => w_anode122w[3]~0.IN0
+data[1] => w_anode91w[2].IN0
+data[2] => w_anode102w[3].IN0
+data[2] => w_anode112w[3].IN0
+data[2] => w_anode122w[3].IN0
 data[2] => w_anode132w[3].IN1
 data[2] => w_anode142w[3].IN1
 data[2] => w_anode152w[3].IN1
 data[2] => w_anode162w[3].IN1
-data[2] => w_anode21w[3]~0.IN0
-data[2] => w_anode31w[3]~0.IN0
-data[2] => w_anode41w[3]~0.IN0
-data[2] => w_anode4w[3]~0.IN0
+data[2] => w_anode21w[3].IN0
+data[2] => w_anode31w[3].IN0
+data[2] => w_anode41w[3].IN0
+data[2] => w_anode4w[3].IN0
 data[2] => w_anode51w[3].IN1
 data[2] => w_anode61w[3].IN1
 data[2] => w_anode71w[3].IN1
 data[2] => w_anode81w[3].IN1
-data[2] => w_anode91w[3]~0.IN0
+data[2] => w_anode91w[3].IN0
 data[3] => enable_wire1.IN0
 data[3] => w_anode102w[1].IN0
 data[3] => w_anode112w[1].IN0
